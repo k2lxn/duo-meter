@@ -13,6 +13,7 @@ body {
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
+	padding-top: 20px;
 }
 
 h1, h2 {
@@ -30,10 +31,21 @@ h2 {
 
 label {
 	font-size: 2.5em;
+	height: 100%;
+	padding-left: 25px;
+}
+
+.logo {
+	width: 50px;
+}
+
+label > span {
+	vertical-align: top;
 }
 
 progress {
 	flex-grow: 1;
+	position: relative;
 }
 
 progress[value] {
@@ -51,8 +63,33 @@ progress[value]::-webkit-progress-bar {
 }
 
 progress[value]::-webkit-progress-value {
-	background-color: #44cc22;
+	background-color: #6ab72f;
 
     border-radius: 10px; 
     background-size: 35px 20px, 100% 100%, 100% 100%;
 }
+
+
+progress::before, progress::after {
+	position: absolute;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 15px;
+}
+
+progress::before {
+	content: "59";
+	left: 12%;
+	color: #fff;
+}
+
+progress::after {
+	content: "159";
+	right: 36%;
+	top: 0;
+	color: #444;
+}
+
+
+
+
