@@ -72,20 +72,21 @@ progress[value]::-webkit-progress-value {
 
 progress::before, progress::after {
 	position: absolute;
+	display: inline-block;
 	font-size: 1.5em;
 	font-weight: bold;
 	padding: 15px;
 }
 
 progress::before {
-	content: "59";
-	left: 12%;
+	content: "17";
+	left: 3%;
 	color: #fff;
 }
 
 progress::after {
-	content: "159";
-	right: 36%;
+	content: "139";
+	right: 44%;
 	top: 0;
 	color: #444;
 }
