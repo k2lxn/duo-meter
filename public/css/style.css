@@ -1,0 +1,58 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+h1, h2 {
+	flex-basis: 100%;
+	flex-shrink: 0;
+}
+
+h1 {
+	padding: 20px 0;
+}
+
+h2 {
+	padding: 10px 0;
+}
+
+label {
+	font-size: 2.5em;
+}
+
+progress {
+	flex-grow: 1;
+}
+
+progress[value] {
+	/* Reset the default appearance */
+ 	-webkit-appearance: none;
+	appearance: none;
+
+	height: 60px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+	background-color: #44cc22;
+
+    border-radius: 10px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
