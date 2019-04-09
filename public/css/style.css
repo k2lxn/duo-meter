@@ -81,13 +81,13 @@ progress::before, progress::after {
 
 progress::before {
 	content: "50";
-	left: 9%;
+	left: 13%;
 	color: #fff;
 }
 
 progress::after {
 	content: "116";
-	right: 37%;
+	right: 34%;
 	top: 0;
 	/*color: #444;*/
 	color: #fff;
