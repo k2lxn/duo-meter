@@ -1,26 +1,21 @@
 $( document ).ready( function() {
 
 	var max = $( "progress" ).attr("max");
-	console.log(max);
-
 	var val = $( "progress" ).val();
-	console.log(val);
-
-	var val_remining = (max - val);
-
 	var total_width = $( "progress" ).innerWidth();
-
 	var left = ( Math.round((((val/max)/2 ) * total_width) - 30 )) + "px";
-	console.log( left );
-
 	var right = ( Math.round(((((max - val)/max)/2 ) * total_width) - 30 )) + "px";
-	console.log( right );
+
+	var val_string = ( "\"" + val + "\"" );
+	var val_remaining = ( "\"" + (max - val) + "\"");
+
 
 	var div = $( "progress" )[0];
+	div.pseudoStyle("before","content",val_string);
 	div.pseudoStyle("before","left",left);
-	//div.pseudoStyle("before","data-content",val.toString();
+	div.pseudoStyle("after","content",val_remaining);
 	div.pseudoStyle("after","right",right);
-	//div.pseudoStyle("after","data-content",val_remining.toString());
+
 
 
 });
