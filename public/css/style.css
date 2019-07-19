@@ -32,11 +32,11 @@ h2 {
 label {
 	font-size: 2.5em;
 	height: 100%;
-	padding-left: 25px;
+	padding: 0 25px;
 }
 
 .logo {
-	width: 50px;
+	width: 60px; 
 }
 
 label > span {
@@ -57,14 +57,15 @@ progress[value] {
 }
 
 progress[value]::-webkit-progress-bar {
-  /*background-color: rgb(200,200,200);*/
-  background-color: rgba(200,50,50, .8);
+  /*background-color: rgba(200,50,50, .8);*/
+  background-color: rgba(0,0,0,.7);
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
 
 progress[value]::-webkit-progress-value {
-	background-color: #6ab72f;
+	/*background-color: #6ab72f;*/
+	background-color: #4ec3ed;
 
     border-radius: 10px; 
     background-size: 35px 20px, 100% 100%, 100% 100%;
@@ -93,6 +94,29 @@ progress::after {
 	color: #fff;
 }
 
+.timeline-marker {
+	position: absolute;
+	font-size: 20px;
+	top: 90px;
+}
 
+.timeline-marker:after {
+	content: "|";
+	position: absolute;
+	top: -20px;
+	left: 50%;
+}
+
+.timeline-marker.halfway {
+	left: calc(50% - 25px);
+}
+
+.timeline-marker.start {
+	left: calc(10% + 100px);
+}
+
+.timeline-marker.end {
+	right: calc(10% + 100px);
+}
 
 
