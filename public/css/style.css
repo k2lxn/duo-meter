@@ -117,11 +117,11 @@ progress::after {
 }
 
 .timeline-marker.start {
-	left: calc(10% + 100px);
+	left: calc(10% + 140px);
 }
 
 .timeline-marker.end {
-	right: calc(10% + 100px);
+	right: calc(10% + 150px);
 }
 
 .green {
